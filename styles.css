@@ -25,4 +25,5 @@ html {
     --dourado: #efb70e;
     --fonte-principal: "Roboto", sans-serif;
     --fonte-destaque: "Noto Sans", sans-serif;
+    --swiper-pagination-color: var(--dourado);
 }
