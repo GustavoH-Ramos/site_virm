@@ -12,7 +12,7 @@ form.addEventListener('submit', function(event)  {
     const ajudar = document.querySelector('#ajudar')
     
 
-    const formularioValor = `Nome: ${nome.value} | Email: ${email.value} | Telefone: ${telefone.value} | Assunto: ${servico.value} | Descrição: ${ajudar.value} `
+    const formularioValor = `Nome: ${nome.value} \nEmail: ${email.value} \nTelefone: ${telefone.value} \nAssunto: ${servico.value} \nDescrição: ${ajudar.value} `
 
     const message = encodeURIComponent(formularioValor)
     const phone = ""
