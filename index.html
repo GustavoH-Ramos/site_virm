@@ -311,7 +311,7 @@
         <h2 class="pagamnetos__titulo">
           Preencha os campos para iniciar um orçamento gratuito
         </h2>
-        <form class="principal__formulario" data-formulario>
+        <form class="principal__formulario" id="form" data-formulario>
           <fieldset class="formulario__campo">
             <label class="campo__etiqueta" for="nome">Nome:</label>
             <input
@@ -343,8 +343,8 @@
               >Número de celular:</label
             >
             <input
-              name="email"
-              id="email"
+              name="telefone"
+              id="telefone"
               class="campo__escrita campo__escrita--menor"
               type="text"
               minlength="4"
@@ -358,8 +358,8 @@
               >Assunto ou serviço:</label
             >
             <input
-              name="email"
-              id="email"
+              name="servico"
+              id="servico"
               class="campo__escrita campo__escrita--menor"
               type="text"
               minlength="4"
@@ -375,8 +375,8 @@
 
             <textarea
               rows="6"
-              name="email"
-              id="email"
+              name="ajudar"
+              id="ajudar"
               type="text"
               minlength="4"
               class="campo__escrita campo__escrita--maior"
@@ -481,5 +481,6 @@
       ></a>
     </section>
     <script type="text/JavaScript" src="apps/app.js"></script>
+    <script src="apps/api.js"></script>
   </body>
 </html>
