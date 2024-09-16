@@ -1,0 +1,33 @@
+.portfolio, .depoimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+}
+
+.portfolio__lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(140px, auto);
+    grid-gap: 1em;
+    margin: 4em;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: stretch;
+}
+
+@media screen and ( max-width: 1440px) {
+    .portfolio__lista{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and ( max-width: 730px) {
+    .portfolio__lista{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5em;
+        margin-top: 2em;
+    }
+}

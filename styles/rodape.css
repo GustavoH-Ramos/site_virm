@@ -1,0 +1,159 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--dourado);
+    padding: 1em 0 3em 0;
+}
+
+.rodape__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 2em 10% 4em 10%;
+}
+
+.rodape__coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social{
+    gap: 4em;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.rodape__item, .rodape__titulo, .rodape__contato, .copy ,.rodape__item a{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--branco);
+}
+
+.rodape__titulo{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.rodape__contato{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.rodape__social img{
+    width: 250%;
+    transition: all ease 1s;
+}
+
+.copy{
+    text-align: center;
+    border-top: 2px solid var(--dourado);
+    padding-top: 2em;
+    color: lightgray;
+}
+
+.rodape__social img:hover{
+    transform: scale(1.3);
+}
+
+.rodape__item a:hover{
+    color: var(--dourado);
+}
+
+@media screen and ( max-width: 1440px) {
+    .rodape__item, .copy ,.rodape__item a{
+        font-size: 22px;
+    }
+    
+    .rodape__info{
+        margin: 2em 5em 4em 5em;
+    }
+
+    .rodape__titulo, .rodape__contato{
+        font-size: 26px;
+    }
+
+    .rodape__social img{
+        width: 200%;
+        transition: all ease 1s;
+    }
+
+    .social{
+        gap: 3em;
+        flex-direction: row;
+        margin-top: 2em;
+    }   
+}
+
+@media screen and ( max-width: 1000px) {
+    .rodape__info{
+        flex-wrap: wrap;
+        margin: 2em 1.5em 4em 1.5em;
+        gap: 2em;
+    }
+
+    .contato{
+        order: 1;
+    }
+
+    .rodape__titulo, .rodape__contato{
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+
+    .social__caixa{
+        order: 3;
+        margin-right: 2em;
+    }
+    
+    .links{
+        order: 2;
+        margin-top: 2em;
+    }
+
+    .rodape__item, .copy ,.rodape__item a{
+        font-size: 22px;
+    }
+}
+
+@media screen and ( max-width: 720px) {
+    .social__caixa{
+        order: 3;
+        margin-right: 0;
+    }
+    
+    .contato{
+        order: 1;
+    }
+    
+    .links{
+        order: 2;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .rodape__info{
+        justify-content: flex-start;
+        gap: 4em;
+        text-align: left;
+    }
+
+    .copy{
+        font-size: 14px;
+        padding: 2em 4em 0 4em;
+    }
+    .rodape__titulo{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .rodape__contato{
+        font-weight: 600;
+        font-size: 26px;
+    }
+    
+}

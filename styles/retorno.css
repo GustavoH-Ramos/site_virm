@@ -1,0 +1,22 @@
+.retorno {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+}
+
+.botao__retorno {
+    background-color: var(--dourado);
+    color: var(--branco);
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0.5em;
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+}
+
+.retorno.visible {
+    opacity: 80%;
+    pointer-events: all;
+}

@@ -1,0 +1,130 @@
+.servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 6em 0 10em 0;
+}
+
+.servicos__titulo{
+    font-size: 40px;
+    font-family: var(--fonte-destaque);
+    color: var(--branco);
+    text-align: center;
+    font-weight: 600;
+}
+
+.servicos__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 2em 0;
+  }
+  
+  .servicos__item {
+    width: 22%;
+    position: relative;
+    margin: 1em;
+    transition: ease .8s;
+  }
+
+  .servicos__img {
+    width: 100%;
+    height: 40%;
+    transition: all ease 0.6s;
+    filter: brightness(80%);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .servicos__texto{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    pointer-events: none;
+    padding-right: 5%;
+  }
+
+  .servicos__nome{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--fonte-destaque);
+    color: var(--branco);
+    margin-bottom: .5em;
+  }
+
+  .servicos__legenda{
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--branco);
+    font-size: 20px;
+  }
+
+  .servicos__item:hover {
+    transform: scale(1.03);
+  }
+
+  .servicos__img:hover{
+    filter: brightness(95%);
+  }
+
+  @media screen and ( max-width: 1440px) {
+    .servicos__item {
+      width: 30%;
+    }
+    .servicos__nome{
+      font-size: 24px;
+    }
+    .servicos__legenda{
+      font-size: 18px;
+    }
+  }
+
+  @media screen and ( max-width: 1000px) {
+    .servicos__item {
+      width: 42%;
+    }
+
+    .servicos__titulo{
+      font-size: 30px;
+    }
+
+    .servicos__lista {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 2em 0;
+    }
+  }
+
+  @media screen and (max-width: 730px){
+    .servicos__item {
+      width: 90%;
+    }
+    .servicos__nome{
+      font-size: 20px;
+    }
+    .servicos__legenda{
+      font-size: 16px;
+    }
+    .servicos__lista {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .servicos__titulo{
+      font-size: 24px;
+    }
+  }

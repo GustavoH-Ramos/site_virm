@@ -1,0 +1,122 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 6em
+}
+
+.formulario__campo {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.campo__etiqueta {
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 20px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
+
+.campo__escrita {
+    display: block;
+    border: 2px solid var(--dourado);
+    border-radius: 20px;
+    width: 100%;
+    padding: 1em;
+    margin-top: .5em;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+.formulario__termos{
+    display: flex;
+    gap: .3em;
+}
+
+.formulario__termos a{
+    text-decoration: none;
+    color: var(--dourado);
+}
+
+.termos__texto{
+    color: lightgray;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+}
+
+.formulario__botao{
+    background: var(--dourado);
+    margin: 2em auto;
+    display: block;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    transition: all ease .9s;
+    cursor: pointer;
+}
+
+.campo__escrita--menor {
+    width: 50%;
+}
+
+.campo__escrita--maior {
+    line-height: 28px;
+   
+}
+
+.formulario__botao:hover{
+    background: var(--preto);
+    border: 2px solid var(--dourado);
+}
+
+input:focus {
+    background-color: #eee2bc;
+   
+  }
+
+  @media screen and ( max-width: 1440px) {
+    .formulario{
+        margin: 6em;
+    }
+  }
+  @media screen and ( max-width: 1000px) {
+    .formulario{
+        margin: 3em;
+    }
+  }
+  @media screen and ( max-width: 730px) {
+    .formulario{
+        margin: .5em;
+    }
+
+    .formulario__campo {
+        margin-bottom: 2em;
+        width: 90%;
+    }
+
+    .formulario__botao{
+        background: var(--dourado);
+        margin: 2em auto;
+        display: block;
+        border: none;
+        padding: .5em 2em;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--branco);
+        border: 2px solid var(--branco);
+        transition: all ease .9s;
+        cursor: pointer;
+    }
+  }

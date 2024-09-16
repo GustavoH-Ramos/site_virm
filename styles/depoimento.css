@@ -1,0 +1,111 @@
+.depoimento{
+    margin-top: 10em;
+}
+
+.depoimento__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 3% 2% 3% 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimento__item{
+    background-color: var(--branco);
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    width: 30em;
+    height: 15em;
+}
+
+.depoimento__header{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-bottom: 1px solid var(--dourado);
+}
+
+.depoimento__img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.depoimento__informacao{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    padding: .2em;
+    text-align: left;
+}
+
+.depoimento__nome{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--preto);
+}
+
+.depoimento__servico{
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.depoimento__texto{
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    gap: .3em;
+    text-align: left;
+}
+
+.depoimento__opiniao{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}
+
+.depoimento__data{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+}
+
+@media screen and ( max-width: 1440px) {
+    .depoimento__item{
+        width: 30%;
+    }
+    .depoimento__lista {
+        margin: 3% 1% 3% 1%;
+    }
+
+}
+
+@media screen and ( max-width: 1000px) {
+    .depoimento__item{
+        width: 43%;
+    }
+    .depoimento__lista {
+        margin: 4em 1% 3% 1%;
+    }
+}
+
+@media screen and ( max-width: 730px) {
+    .depoimento{
+        margin-top: 4em;
+    }
+    
+    .depoimento__item{
+        width: 100%;
+    }
+    .depoimento__lista {
+        margin: 4em 1% 3% 1%;
+    }
+}

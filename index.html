@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="apps/animation.js"></script>
+    <title>Vidraçaria Virm</title>
+  </head>
+  <body>
+    <header>
+      <section class="cabecalho" id="retorno">
+        <img src="img/virm_logo.svg" alt="" class="cabecalho__img" />
+        <img
+          onclick="menuShow(), menuChange()"
+          src="img/combobox.svg"
+          alt=""
+          class="combobox open"
+        />
+        <img
+          onclick="menuShow(), menuChange()"
+          src="img/vetorx.svg"
+          alt=""
+          class="vetorx"
+        />
+        <ul class="cabecalho__lista fade-in menu">
+          <li class="cabecalho__link"><a href="#retorno">Início</a></li>
+          <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
+          <li class="cabecalho__link"><a href="#servicos">Serviços</a></li>
+          <li class="cabecalho__link"><a href="#portfolio">Portfólio</a></li>
+          <li class="cabecalho__link"><a href="#clientes">Clientes</a></li>
+          <li class="cabecalho__link"><a href="#orcamento">Orçamento</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <section class="banner" id="inicio">
+        <div class="banner__caixa fade-in">
+          <h1 class="titulo__pg">
+            Qualidade e sofisticação em vidros para sua casa ou empresa.
+          </h1>
+          <p class="legenda__pg">
+            Na Virm, oferecemos soluções em vidro sob medida para transformar
+            seus ambientes. Com um portfólio completo de produtos, desde box
+            para banheiro até envidraçamento de sacada, nossos profissionais
+            especializados garantem a qualidade e a beleza que você procura.
+            Conte com a nossa experiência para realizar o seu projeto com
+            excelência.
+          </p>
+        </div>
+      </section>
+
+      <section class="sub__banner" id="sobre">
+        <div class="banner__caixa">
+          <h1 class="titulo__pg">Sobre a Virm</h1>
+          <p class="legenda__pg sobre">
+            Somos uma empresa especializada em soluções em vidro, com anos de
+            experiência no mercado. Nossa equipe de profissionais altamente
+            qualificados está sempre atualizada com as últimas tendências e
+            tecnologias do setor, garantindo produtos de alta qualidade e
+            serviços personalizados.
+          </p>
+          <p class="legenda__pg sobre">
+            Nossa missão é oferecer aos nossos clientes soluções completas em
+            vidro, desde a fabricação até a instalação, com o objetivo de
+            superar suas expectativas e transformar seus ambientes.
+          </p>
+        </div>
+        <ul class="qualidades__lista">
+          <li class="qualidades__item hidden">
+            <img src="img/tecnica.svg" alt="" class="qualidades__img" />
+            <span class="qualidades__legenda">Trabalhamos com técnica</span>
+          </li>
+          <li class="qualidades__item hidden">
+            <img src="img/velocidade.svg" alt="" class="qualidades__img" />
+            <span class="qualidades__legenda">Atendimento veloz</span>
+          </li>
+          <li class="qualidades__item hidden">
+            <img src="img/qualidade.svg" alt="" class="qualidades__img" />
+            <span class="qualidades__legenda">Serviços de qualidade</span>
+          </li>
+        </ul>
+        <a href="#orcamento" class="botao"><span>Faça seu orçamento!</span></a>
+      </section>
+
+      <section class="servicos" id="servicos">
+        <h2 class="servicos__titulo">Nossos serviços</h2>
+        <ul class="servicos__lista">
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Box</h3>
+              <p class="servicos__legenda">
+                Box em vidro temperado, moderno e seguro. Diversas opções de
+                modelos e acabamentos.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Portas</h3>
+              <p class="servicos__legenda">
+                Portas elegantes e funcionais em vidro temperado e laminado,
+                para ambientes internos e externos.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Janelas</h3>
+              <p class="servicos__legenda">
+                Janelas em vidro temperado e laminado, proporcionando mais luz e
+                conforto acústico.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Espelhos</h3>
+              <p class="servicos__legenda">
+                Espelhos sob medida, com design personalizado e alta qualidade.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Tampos de mesa</h3>
+              <p class="servicos__legenda">
+                Tampos de vidro temperado, resistentes e sofisticados, para
+                diversos ambientes.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">
+                Guarda corpo de vidro e de alumínio
+              </h3>
+              <p class="servicos__legenda">
+                Guarda-corpos modernos e seguros, em vidro temperado ou alumínio
+                com vidro.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Envidraçamento de sacada</h3>
+              <p class="servicos__legenda">
+                Envidraçamento retrátil, ampliando seu espaço e proporcionando
+                mais conforto térmico e acústico.
+              </p>
+            </div>
+          </li>
+          <li class="servicos__item">
+            <img src="img/test.png" alt="" class="servicos__img" />
+            <div class="servicos__texto">
+              <h3 class="servicos__nome">Vidros Temperados e Laminados</h3>
+              <p class="servicos__legenda">
+                Vidros resistentes a impactos, ideais para diversas aplicações.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a href="#orcamento" class="botao"><span>Faça seu orçamento!</span></a>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="servicos__titulo">Projetos finalizados</h2>
+
+        <ul class="portfolio__lista">
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+          <li class="img hidden">
+            <img src="img/test.png" alt="" class="servicos__img" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="depoimento" id="clientes">
+        <h2 class="servicos__titulo">Depoimentos de clientes satisfeitos</h2>
+        <ul class="depoimento__lista">
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+          <li class="depoimento__item">
+            <div class="depoimento__header">
+              <img src="./img/test.png" alt="" class="depoimento__img" />
+              <div class="depoimento__informacao">
+                <span class="depoimento__nome">Nome do individuo</span>
+                <span class="depoimento__servico">Serviço contratado</span>
+              </div>
+            </div>
+            <div class="depoimento__texto">
+              <p class="depoimento__opiniao">Opinião do cliente</p>
+              <span class="depoimento__data">07/07/2007</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pagamnetos">
+        <h2 class="pagamnetos__titulo">
+          Temos pagamento facilitado para você!
+        </h2>
+        <ul class="pagamnetos__lista">
+          <li><img src="img/pix.svg" alt="" class="pagamentos__img" /></li>
+          <li><img src="img/visa.svg" alt="" class="pagamentos__img" /></li>
+          <li><img src="img/master.svg" alt="" class="pagamentos__img" /></li>
+          <li><img src="img/elo.svg" alt="" class="pagamentos__img" /></li>
+        </ul>
+        <a href="#orcamento" class="botao"><span>Faça seu orçamento!</span></a>
+      </section>
+
+      <section class="formulario" id="orcamento">
+        <h2 class="pagamnetos__titulo">
+          Preencha os campos para iniciar um orçamento gratuito
+        </h2>
+        <form class="principal__formulario" data-formulario>
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="nome">Nome:</label>
+            <input
+              name="nome"
+              id="nome"
+              class="campo__escrita"
+              type="text"
+              minlength="3"
+              required
+            />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="email">E-mail:</label>
+            <input
+              name="email"
+              id="email"
+              class="campo__escrita"
+              type="email"
+              minlength="4"
+              required
+            />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="email"
+              >Número de celular:</label
+            >
+            <input
+              name="email"
+              id="email"
+              class="campo__escrita campo__escrita--menor"
+              type="text"
+              minlength="4"
+              required
+            />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="email"
+              >Assunto ou serviço:</label
+            >
+            <input
+              name="email"
+              id="email"
+              class="campo__escrita campo__escrita--menor"
+              type="text"
+              minlength="4"
+              required
+            />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="email"
+              >Como podemos te ajudar?</label
+            >
+
+            <textarea
+              rows="6"
+              name="email"
+              id="email"
+              type="text"
+              minlength="4"
+              class="campo__escrita campo__escrita--maior"
+              required
+            ></textarea>
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset class="formulario__termos">
+            <input
+              name="termos"
+              class="termos__input"
+              type="checkbox"
+              required
+            />
+            <p class="termos__texto">
+              Li e estou ciente quanto às condições de tratamento dos meus dados
+              conforme descrito na
+              <a target="_blank" href="pages/policy.html"
+                >Política de Privacidade</a
+              >
+              da empresa.
+            </p>
+            <span class="mensagem-erro"></span>
+          </fieldset>
+          <div>
+            <input
+              value="Enviar"
+              class="formulario__botao"
+              id="enviar"
+              data-botao-enviar
+              type="submit"
+            />
+            <span class="mensagem-erro"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <section class="rodape__info">
+        <div class="rodape__coluna contato">
+          <img
+            src="img/virm_logo.svg"
+            alt=""
+            class="cabecalho__img rodape__titulo"
+          />
+          <p class="rodape__contato">+55 11 94843-7709</p>
+          <p class="rodape__contato">virm@gmail.com</p>
+        </div>
+        <ul class="rodape__coluna links">
+          <li class="rodape__titulo">Links úteis</li>
+          <li class="rodape__item"><a href="#retorno">Início</a></li>
+          <li class="rodape__item"><a href="#sobre">Sobre</a></li>
+          <li class="rodape__item"><a href="#servicos">Serviços</a></li>
+          <li class="rodape__item"><a href="#portfolio">Portfólio</a></li>
+          <li class="rodape__item"><a href="#clientes">Clientes</a></li>
+          <li class="rodape__item"><a href="#orcamento">Orçamento</a></li>
+          <li class="rodape__item">
+            <a target="_blank" href="pages/policy.html"
+              >Política de Privacidade</a
+            >
+          </li>
+        </ul>
+        <div class="social__caixa">
+          <span class="rodape__titulo">Nossas redes:</span>
+          <ul class="rodape__coluna social">
+            <li class="rodape__social">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/vidracariairmaosrm/"
+                ><img src="./img/vetorinstagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="rodape__social">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/vidracariairmaosrm"
+                ><img src="./img/vetorfacebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="rodape__social">
+              <a target="_blank" href=""
+                ><img src="./img/vetortiktok.svg" alt=""
+              /></a>
+            </li>
+            <li class="rodape__social">
+              <a target="_blank" href="https://wa.me/5511948437709"
+                ><img src="./img/vetorwhats.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="copy">
+        <span>@Vidraçaria VIRM 2024. Todos os direitos reservados.</span>
+      </div>
+    </footer>
+    <section class="retorno">
+      <a href="#retorno" class="botao__retorno"
+        ><i class="fa-solid fa-chevron-up"></i
+      ></a>
+    </section>
+    <script type="text/JavaScript" src="apps/app.js"></script>
+  </body>
+</html>
