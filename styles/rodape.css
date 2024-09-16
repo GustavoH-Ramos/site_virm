@@ -129,6 +129,10 @@
     .contato{
         order: 1;
     }
+
+    .rodape__item a{
+        font-size: 18px;
+    }
     
     .links{
         order: 2;
@@ -153,7 +157,7 @@
     
     .rodape__contato{
         font-weight: 600;
-        font-size: 26px;
+        font-size: 24px;
     }
     
 }
