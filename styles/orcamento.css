@@ -79,9 +79,8 @@
     border: 2px solid var(--dourado);
 }
 
-input:focus {
+.campo__escrita:focus {
     background-color: #eee2bc;
-   
   }
 
   @media screen and ( max-width: 1440px) {
