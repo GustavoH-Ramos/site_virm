@@ -1,0 +1,42 @@
+<IfModule mod_headers.c>
+    # Política atualizada para permitir scripts e estilos externos necessários
+    Header set Content-Security-Policy "
+        script-src 'self' https://cdn.jsdelivr.net; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com; 
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+    "
+
+    # Política para evitar XSS
+    Header set X-XSS-Protection "1; mode=block"
+
+    # Proteção contra Clickjacking
+    Header always set X-Frame-Options "DENY"
+
+    # Proteção contra MIME sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Proibição de redirecionamentos HTTP para HTTPS
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    # Protege arquivos sensíveis como .htaccess e .env
+    <FilesMatch "^.*\.(htaccess|env)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+
+    # Configuração de Cache-Control
+    Header set Cache-Control "private, no-store, max-age=0, must-revalidate"
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
